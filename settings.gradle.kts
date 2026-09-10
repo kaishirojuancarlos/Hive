@@ -22,6 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Amasampo"
+rootProject.name = "Hive"
 include(":library")
-
