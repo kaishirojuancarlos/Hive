@@ -1,0 +1,17 @@
+Gradle start parameters:
+  tasks = []
+  excluded tasks = []
+  current dir = /home/kaishirojuancarlos/Projects/Software/Pantheon/Hive
+  project properties args = []
+  system properties args = [user.variant: , file.encoding: UTF-8, user.country: ZM, user.language: en]
+
+Time metrics:
+  Total Gradle task time: 0.003 s
+
+
+
+No Kotlin task was run
+Task ':help' finished in 0.003 s
+Time metrics:
+  Total Gradle task time: 0.003 s
+

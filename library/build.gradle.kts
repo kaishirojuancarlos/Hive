@@ -3,6 +3,9 @@ plugins {
 	alias(libs.plugins.application)
 }
 
+group = "kaishiro.hive"
+version = "1.1.0"
+
 dependencies {
 	api(kotlin("stdlib"))
 	api(kotlin("reflect"))
