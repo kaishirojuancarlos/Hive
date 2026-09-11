@@ -1,16 +1,43 @@
+# Hive Library Centralized Dependency Version Catalog
+# ====================================================
+#
+# This file provides centralized version management for the Hive utilities
+# library dependencies. Using version catalogs ensures consistent dependency
+# versions across all modules and simplifies version updates.
+#
+# Usage in build.gradle.kts:
+#   implementation(libs.kotlinStdlib)
+#   alias(libs.plugins.kotlinJvm)
+#
+# For more information, see:
+# https://docs.gradle.org/current/userguide/version_catalogs.html
+
 [versions]
 # Kotlin version - must be compatible with the JVM toolchain version
+# Version format: major.minor.patch
 kotlin = "2.3.20"
 
+
 [libraries]
-# Kotlin standard libraries
+# -----------------------------------------------------------------------------
+# Kotlin Standard Libraries
+# -----------------------------------------------------------------------------
+# Kotlin standard library - required for all Kotlin projects
 kotlinStdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+
+# Kotlin reflection - used for runtime reflection features
 kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
 
+
 [plugins]
+# -----------------------------------------------------------------------------
+# Kotlin Plugins
+# -----------------------------------------------------------------------------
 # Kotlin JVM plugin for compiling Kotlin code to JVM bytecode
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
 # Application plugin for creating executable applications
 application = { id = "application" }
+
 # Foojay resolver for managing JDK toolchains
 foojay-resolver = { id = "org.gradle.toolchains.foojay-resolver-convention", version = "1.0.0" }
