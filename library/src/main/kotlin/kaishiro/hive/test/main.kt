@@ -6,8 +6,7 @@ import kaishiro.hive.default.io.bufferSize
 /**
  * Entry point used to test the library.
  * 
- * This function demonstrates basic usage of the Hive library by printing
- * the values of some constants to verify they are accessible and correct.
+ * This function demonstrates basic usage of the Hive library.
  */
 fun main() {
 	println(":: \"$whitespace\"")
