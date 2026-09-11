@@ -1,6 +1,16 @@
 [versions]
+# Kotlin version - must be compatible with the JVM toolchain version
 kotlin = "2.3.20"
 
+[libraries]
+# Kotlin standard libraries
+kotlinStdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
 [plugins]
-kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+# Kotlin JVM plugin for compiling Kotlin code to JVM bytecode
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+# Application plugin for creating executable applications
 application = { id = "application" }
+# Foojay resolver for managing JDK toolchains
+foojay-resolver = { id = "org.gradle.toolchains.foojay-resolver-convention", version = "1.0.0" }
