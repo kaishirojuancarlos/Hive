@@ -6,7 +6,7 @@ import java.nio.charset.Charset
  * Null character (ASCII 0).
  * Often used as a sentinel value or string terminator.
  */
-const val whitespace: Char = '\u0'
+const val whitespace: Char = '\u0000'
 
 /**
  * Space character (ASCII 32).
